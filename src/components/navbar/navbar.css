@@ -13,6 +13,7 @@ Very Light Gray: hsl(0, 0%, 98%)
 
 nav {
   background-color: hsl(0, 0%, 98%);
+  z-index: 99;
 }
 
 nav .container-fluid {
@@ -124,6 +125,14 @@ nav .container-fluid {
 @media screen and (min-width: 991px) {
   .navbar-nav .nav-link:hover {
     color: hsl(270, 9%, 17%);
+  }
+
+  .navbar-brand {
+    margin: 1.5rem 0 !important;
+  }
+
+  nav .container-fluid {
+    padding: 0;
   }
 }
 

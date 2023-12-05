@@ -1,0 +1,62 @@
+/* 
+  FONTS
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; 
+
+  COLORS
+Dark Violet: hsl(256, 26%, 20%)
+Grayish Blue: hsl(216, 30%, 68%)
+Very Dark Violet: hsl(270, 9%, 17%)
+Dark Grayish Violet: hsl(273, 4%, 51%)
+Very Light Gray: hsl(0, 0%, 98%)
+*/
+
+#hero {
+  position: relative;
+  height: 100vh;
+}
+/* background */
+.hero-img-back {
+  position: absolute;
+}
+.hero-img-right {
+  right: 0;
+  top: -80px;
+  overflow: hidden;
+}
+.hero-img-left {
+  left: 0;
+  bottom: 0;
+}
+.div-top {
+  position: absolute;
+  background-color: hsl(256, 26%, 20%);
+  top: 0;
+  height: 70vh;
+  z-index: -99;
+}
+
+/* flex-container */
+.hero_wrapper_container {
+  max-width: 1200px;
+  padding-top: 6rem;
+}
+#hero_text h1 {
+  color: hsl(0, 0%, 98%);
+  font-family: "DM Serif Display", serif;
+  font-size: 4.5rem;
+  padding: 5rem 0 1rem;
+}
+#hero_text p,
+#hero_text a {
+  color: hsl(0, 0%, 98%);
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+}
+#hero_text a {
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 2px solid hsl(0, 0%, 98%);
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
