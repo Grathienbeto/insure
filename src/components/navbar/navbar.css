@@ -11,6 +11,14 @@ Dark Grayish Violet: hsl(273, 4%, 51%)
 Very Light Gray: hsl(0, 0%, 98%)
 */
 
+nav {
+  background-color: hsl(0, 0%, 98%);
+}
+
+nav .container-fluid {
+  max-width: 1200px;
+}
+
 .nav-link {
   font-family: "Karla", sans-serif;
 }
@@ -26,6 +34,10 @@ Very Light Gray: hsl(0, 0%, 98%)
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar-brand {
+  color: hsl(256, 26%, 20%);
 }
 
 .navbar-toggler,
@@ -67,7 +79,7 @@ Very Light Gray: hsl(0, 0%, 98%)
   position: absolute;
   padding: 0;
   right: 5;
-  width: 100%;
+  width: 65%;
   height: 2px;
   background-color: black;
 }
@@ -84,7 +96,7 @@ Very Light Gray: hsl(0, 0%, 98%)
   display: hidden !important;
 }
 .navbar-toggler.collapsed .toggle-icon {
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: black;
   transform: rotate(0deg);
@@ -94,15 +106,15 @@ Very Light Gray: hsl(0, 0%, 98%)
   content: "";
   position: absolute;
   left: 0;
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: black;
 }
 .navbar-toggler.collapsed .toggle-icon::after {
-  transform: translateY(8px);
+  transform: translateY(6px);
 }
 .navbar-toggler.collapsed .toggle-icon::before {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 .navbar-toggler.collapsed .toggle-icon-hidden-x,
 .navbar-toggler.collapsed .toggle-icon-hidden-y {
@@ -140,7 +152,7 @@ Very Light Gray: hsl(0, 0%, 98%)
   }
 
   nav .navbar-nav .nav-item {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
