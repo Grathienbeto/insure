@@ -32,21 +32,48 @@ Very Light Gray: hsl(0, 0%, 98%)
   position: absolute;
   background-color: hsl(256, 26%, 20%);
   top: 0;
-  height: 70vh;
+  height: 65vh;
   z-index: -99;
 }
 
 /* flex-container */
 .hero_wrapper_container {
+  gap: 1.5rem;
   max-width: 1200px;
   padding-top: 6rem;
+  position: relative;
 }
+
+.little-line {
+  position: absolute;
+  border: 1px solid hsl(0, 0%, 98%);
+  height: 2px;
+  margin: 0;
+  background: hsl(0, 0%, 98%);
+  width: 200px;
+}
+.little-line-bottom {
+  position: absolute;
+  border: 1px solid hsl(256, 26%, 20%);
+  height: 2px;
+  margin: 0;
+  background: hsl(256, 26%, 20%);
+  width: 200px;
+  bottom: -11;
+  left: 15;
+}
+
 #hero_text h1 {
   color: hsl(0, 0%, 98%);
   font-family: "DM Serif Display", serif;
   font-size: 4.5rem;
-  padding: 5rem 0 1rem;
+  padding: 3rem 0 1rem;
+  line-height: 1;
 }
+#hero_text p {
+  line-height: 1.7;
+}
+
 #hero_text p,
 #hero_text a {
   color: hsl(0, 0%, 98%);
@@ -59,4 +86,9 @@ Very Light Gray: hsl(0, 0%, 98%)
   border: 2px solid hsl(0, 0%, 98%);
   padding: 0.5rem 2rem;
   margin-top: 1rem;
+}
+
+#hero_text a:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
 }

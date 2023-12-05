@@ -19,24 +19,27 @@ export const Hero = () => {
 
       <div className="w-100" id="hero_wrapper">
         <div className="hero_wrapper_container mx-auto w-75 d-flex">
-          <div id="hero_text">
+          <hr className="little-line " />
+          <div id="hero_text" className="">
             <h1>Humanizing your insurance.</h1>
-            <p>
+            <p className="mb-5">
               Get your life insurance coverage easier and faster. We blend our
               expertise and technology to help you find the plan that’s right
               for you. Ensure you and your loved ones are protected.
             </p>
-            <a href="#">View plans</a>
+            <a href="#" className="cta-btn">
+              VIEW PLANS
+            </a>
           </div>
           <div id="hero_img">
             <img
               src="https://raw.githubusercontent.com/Grathienbeto/insure/main/challenge/images/image-intro-desktop.jpg"
               alt=""
+              className=""
             />
           </div>
         </div>
       </div>
-      <div></div>
     </section>
   );
 };
