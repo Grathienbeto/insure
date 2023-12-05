@@ -1,0 +1,123 @@
+/* 
+  FONTS
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; 
+
+  COLORS
+Dark Violet: hsl(256, 26%, 20%)
+Grayish Blue: hsl(216, 30%, 68%)
+Very Dark Violet: hsl(270, 9%, 17%)
+Dark Grayish Violet: hsl(273, 4%, 51%)
+Very Light Gray: hsl(0, 0%, 98%)
+*/
+
+.nav-link {
+  font-family: "Karla", sans-serif;
+}
+
+.navbar-toggler {
+  border: 2px solid black;
+  border-radius: 0;
+  padding: 5px;
+  height: 2.5rem;
+  position: relative;
+  width: 2.5rem;
+  /* button flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.toggle-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* X */
+.navbar-toggler .toggle-icon-hidden-x,
+.navbar-toggler .toggle-icon-hidden-y {
+  position: absolute;
+  padding: 0;
+  right: 5;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.navbar-toggler .toggle-icon-hidden-x {
+  transform: rotate(135deg);
+}
+.navbar-toggler .toggle-icon-hidden-y {
+  transform: rotate(45deg);
+}
+
+/* COLLAPSED */
+.toggle-icon-hidden-x,
+.toggle-icon-hidden-y {
+  display: hidden !important;
+}
+.navbar-toggler.collapsed .toggle-icon {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .toggle-icon::after,
+.navbar-toggler.collapsed .toggle-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+}
+.navbar-toggler.collapsed .toggle-icon::after {
+  transform: translateY(8px);
+}
+.navbar-toggler.collapsed .toggle-icon::before {
+  transform: translateY(-8px);
+}
+.navbar-toggler.collapsed .toggle-icon-hidden-x,
+.navbar-toggler.collapsed .toggle-icon-hidden-y {
+  opacity: 0;
+}
+@media screen and (max-width: 990px) {
+  nav .container-fluid {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  nav #navbarSupportedContent {
+    padding-top: 2rem;
+    background-color: hsl(270, 9%, 17%);
+    text-align: center;
+  }
+
+  nav .navbar-nav {
+    gap: 1.5rem;
+  }
+
+  nav .navbar-nav::after {
+    content: url("https://raw.githubusercontent.com/Grathienbeto/insure/b5d6f3d4b7da4de0df98fe5f549a9cc28916b729/challenge/images/bg-pattern-mobile-nav.svg");
+    background-color: hsl(270, 9%, 17%);
+    max-width: 100%;
+    height: 18rem;
+    padding-top: 4.75rem;
+  }
+
+  nav .navbar-nav .nav-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  nav .navbar-nav .nav-link {
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 98%);
+  }
+
+  #plans {
+    border: 2px solid hsl(0, 0%, 98%);
+  }
+}
