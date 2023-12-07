@@ -21,8 +21,9 @@ Very Light Gray: hsl(0, 0%, 98%)
 }
 .hero-img-right {
   right: 0;
-  top: -80px;
+  top: -120px;
   overflow: hidden;
+  z-index: 98;
 }
 .hero-img-left {
   left: 0;
@@ -91,4 +92,63 @@ Very Light Gray: hsl(0, 0%, 98%)
 #hero_text a:hover {
   background-color: hsl(0, 0%, 98%);
   color: hsl(256, 26%, 20%);
+}
+
+.hero-img-back-mobile,
+.div-bot {
+  display: none;
+}
+
+/* Mobile 375px*/
+@media screen and (max-width: 600px) {
+  .div-top,
+  .hero-img-back,
+  .little-line {
+    display: none;
+  }
+
+  .hero_wrapper_container {
+    flex-direction: column-reverse;
+    position: relative;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-img-back-mobile {
+    position: absolute;
+    display: block;
+    z-index: 0;
+  }
+
+  #hero_wrapper {
+    position: relative;
+  }
+
+  .mobile-bg-left {
+    left: 0;
+    top: 1;
+  }
+  .mobile-bg-right {
+    bottom: -180px;
+    right: 0;
+  }
+
+  #hero_text {
+    background-color: hsl(256, 26%, 20%);
+    text-align: center;
+    padding: 0 1.5rem 6rem;
+  }
+
+  #hero_text h1 {
+    font-size: 2.75rem;
+    padding-top: 5.5rem;
+    z-index: 99;
+  }
+
+  .div-bot {
+    background-color: hsl(0, 0%, 98%);
+    display: block;
+    height: 12rem;
+    width: 100%;
+  }
 }
