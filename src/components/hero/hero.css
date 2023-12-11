@@ -100,7 +100,7 @@ Very Light Gray: hsl(0, 0%, 98%)
 }
 
 /* Mobile 375px*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .div-top,
   .hero-img-back,
   .little-line {
@@ -124,12 +124,21 @@ Very Light Gray: hsl(0, 0%, 98%)
     position: relative;
   }
 
+  #hero_img {
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+  }
+  #hero_img picture img {
+    display: block;
+    margin: 0 auto;
+  }
+
   .mobile-bg-left {
     left: 0;
     top: 1;
   }
   .mobile-bg-right {
-    bottom: -180px;
+    bottom: -11rem;
     right: 0;
   }
 
@@ -148,7 +157,7 @@ Very Light Gray: hsl(0, 0%, 98%)
   .div-bot {
     background-color: hsl(0, 0%, 98%);
     display: block;
-    height: 12rem;
+    height: 1rem;
     width: 100%;
   }
 }

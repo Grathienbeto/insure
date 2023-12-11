@@ -3,7 +3,7 @@ import "./navbar.css";
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg d-flex align-items-center p-0">
-      <div className="container-fluid mx-auto w-75">
+      <div className="container-fluid mx-auto">
         <a className="navbar-brand m-4" href="#">
           <img
             src="https://raw.githubusercontent.com/Grathienbeto/insure/b5d6f3d4b7da4de0df98fe5f549a9cc28916b729/challenge/images/logo.svg"

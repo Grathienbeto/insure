@@ -3,12 +3,14 @@ import { Hero } from "./components/hero/Hero";
 
 // CSS
 import "./App.css";
+import { Standouts } from "./components/standouts/Standouts";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Standouts />
     </>
   );
 }

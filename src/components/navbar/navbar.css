@@ -14,6 +14,7 @@ Very Light Gray: hsl(0, 0%, 98%)
 nav {
   background-color: hsl(0, 0%, 98%);
   z-index: 99;
+  width: 100%;
 }
 
 nav .container-fluid {
