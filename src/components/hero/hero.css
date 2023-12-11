@@ -14,6 +14,7 @@ Very Light Gray: hsl(0, 0%, 98%)
 #hero {
   position: relative;
   height: 100vh;
+  padding-top: 1rem;
 }
 /* background */
 .hero-img-back {
@@ -21,13 +22,13 @@ Very Light Gray: hsl(0, 0%, 98%)
 }
 .hero-img-right {
   right: 0;
-  top: -120px;
+  top: -105px;
   overflow: hidden;
   z-index: 98;
 }
 .hero-img-left {
   left: 0;
-  bottom: 0;
+  bottom: -25px;
 }
 .div-top {
   position: absolute;
