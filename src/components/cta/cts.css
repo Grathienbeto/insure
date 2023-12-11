@@ -1,0 +1,110 @@
+/* 
+  FONTS
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; 
+
+  COLORS
+Dark Violet: hsl(256, 26%, 20%)
+Grayish Blue: hsl(216, 30%, 68%)
+Very Dark Violet: hsl(270, 9%, 17%)
+Dark Grayish Violet: hsl(273, 4%, 51%)
+Very Light Gray: hsl(0, 0%, 98%)
+*/
+
+#cta {
+  background-color: hsl(256, 26%, 20%);
+  max-width: 1200px;
+  margin: 10rem auto;
+  position: relative;
+}
+
+#cta_wrapper {
+  padding: 4.3rem;
+}
+
+#cta_wrapper div {
+  width: 50%;
+}
+
+#cta p,
+#cta a {
+  margin: 0;
+  color: hsl(0, 0%, 98%);
+  text-decoration: none;
+}
+
+#cta div:nth-child(2) {
+  text-align: end;
+  z-index: 99;
+}
+
+#cta div a {
+  border: 2px solid hsl(0, 0%, 98%);
+  padding: 0.5rem 2rem;
+}
+
+#cta p {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.cta_bg_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#cta div a:hover {
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+  font-weight: 600;
+}
+
+.cta_bg_img_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  #cta {
+    margin: 4rem 1.5rem;
+  }
+
+  #cta_wrapper div {
+    width: 100%;
+  }
+
+  #cta_wrapper {
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  #cta p {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #cta_wrapper {
+    flex-direction: column;
+  }
+
+  #cta div:nth-child(2) {
+    margin-top: 2rem;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .cta_bg_img {
+    display: none;
+  }
+
+  .cta_bg_img_mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
